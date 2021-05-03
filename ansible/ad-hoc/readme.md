@@ -16,6 +16,7 @@ how to run ansible ad-hoc with custom inventory
 
 	ansible all -i /path/to/inventory ping
         ansible dev -i /path/to/inventory -m copy -a "src=/tmp/new.txt dest=/tmp"
+	ansible AppServer -i myinv -m fetch -a "src=/tmp/test dest=/home/ec2-user/"
 
 how to run ansible ad-hoc with super user (root)
 
